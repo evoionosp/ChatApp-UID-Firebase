@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/very_large_spacing"
+        android:layout_marginRight="@dimen/very_large_spacing"
+        android:textSize="@dimen/large_font_size"
+        android:textStyle="bold"
+        android:text="Say hello to your Session ID" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/very_large_spacing"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="@dimen/very_large_spacing"
+        android:textSize="@dimen/small_font_size"
+
+        android:text="Your Session ID is the unique address people can use to contact you on Session. With no connection to your real identity, your Session ID is totally anonymous and private by design." />
+
+    <TextView
+        android:fontFamily="@font/space_mono_bold"
+        android:id="@+id/publicKeyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginLeft="@dimen/very_large_spacing"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="@dimen/very_large_spacing"
+        android:text="05987d601943c267879be41830888066c6a024cbdc9a548d06813924bf3372ea78" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconDrawable="@drawable/ic_person_black_24dp"
+        android:layout_margin="@dimen/medium_spacing"
+        app:endIconMode="clear_text"
+        android:hint="Your Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNewID"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/medium_button_height"
+        android:layout_marginLeft="@dimen/massive_spacing"
+        android:layout_marginRight="@dimen/massive_spacing"
+        android:text="Create New UID" />
+
+    <Button
+        style="?attr/materialButtonOutlinedStyle"
+        android:id="@+id/btnExistingID"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/medium_button_height"
+        android:layout_marginLeft="@dimen/massive_spacing"
+        android:layout_marginTop="@dimen/small_spacing"
+        android:layout_marginBottom="@dimen/small_spacing"
+        android:layout_marginRight="@dimen/massive_spacing"
+        android:text="Continue with Existing UID" />
+
+
+
+</LinearLayout>
