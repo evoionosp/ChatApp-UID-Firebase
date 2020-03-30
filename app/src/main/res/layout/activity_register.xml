@@ -26,14 +26,14 @@
         android:layout_marginTop="6dp"
         android:layout_marginRight="@dimen/very_large_spacing"
         android:textSize="@dimen/small_font_size"
-
         android:text="Your Session ID is the unique address people can use to contact you on Session. With no connection to your real identity, your Session ID is totally anonymous and private by design." />
 
     <TextView
         android:fontFamily="@font/space_mono_bold"
-        android:id="@+id/publicKeyTextView"
+        android:id="@+id/tvPublicKey"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
         android:textSize="18dp"
         android:layout_marginLeft="@dimen/very_large_spacing"
         android:layout_marginTop="12dp"
@@ -44,14 +44,18 @@
         android:id="@+id/textField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:endIconDrawable="@drawable/ic_person_black_24dp"
-        android:layout_margin="@dimen/medium_spacing"
+        app:startIconDrawable="@drawable/ic_person_black_24dp"
+        android:layout_marginLeft="@dimen/very_large_spacing"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="@dimen/very_large_spacing"
         app:endIconMode="clear_text"
-        android:hint="Your Name">
+        android:hint="Display Name">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDisplayName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPersonName"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -62,22 +66,24 @@
         android:layout_weight="1"/>
 
     <com.google.android.material.button.MaterialButton
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:id="@+id/registerButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/btnRegister"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/black"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/medium_button_height"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/massive_spacing"
         android:layout_marginRight="@dimen/massive_spacing"
         android:text="Continue" />
 
     <com.google.android.material.button.MaterialButton
-        style="@style/Widget.AppCompat.Button.Borderless"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:id="@+id/copyButton"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/black"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/medium_button_height"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/massive_spacing"
-        android:layout_marginTop="@dimen/small_spacing"
-        android:layout_marginBottom="@dimen/small_spacing"
         android:layout_marginRight="@dimen/massive_spacing"
         android:text="Copy" />
 

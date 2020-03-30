@@ -2,21 +2,22 @@ package  com.blankspace.chatapp
 
 import android.app.Activity
 import android.app.ProgressDialog
-import android.nfc.NfcAdapter
 import android.os.Bundle
-import android.preference.PreferenceManager
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
-import com.pixplicity.easyprefs.library.Prefs
+import com.google.firebase.firestore.FirebaseFirestore
 import ir.drax.netwatch.NetWatch
 import ir.drax.netwatch.cb.NetworkChangeReceiver_navigator
+
 
 abstract class MyBaseActivity : AppCompatActivity() {
     private var mProgressDialog: ProgressDialog? = null
 
     var isConnected = true
+
+    var db = FirebaseFirestore.getInstance()
 
 
     public override fun onCreate(savedInstanceState: Bundle?) {
