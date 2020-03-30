@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1030134412874",
+    "firebase_url": "https://chatapp-aes.firebaseio.com",
+    "project_id": "chatapp-aes",
+    "storage_bucket": "chatapp-aes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030134412874:android:ebd3bd0ff4035f6b21d8b3",
+        "android_client_info": {
+          "package_name": "com.blankspace.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1030134412874-oqo4aa6r2vjq53v0s9shlochfgk2j238.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRPd-PDgdt_Xov3nYQtF0nvvy24f4l5GQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1030134412874-oqo4aa6r2vjq53v0s9shlochfgk2j238.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
