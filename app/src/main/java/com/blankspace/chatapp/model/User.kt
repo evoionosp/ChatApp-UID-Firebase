@@ -1,3 +1,8 @@
 package com.blankspace.chatapp.model
 
-class User (uID: String, name: String)
+import com.google.firebase.database.IgnoreExtraProperties;
+
+@IgnoreExtraProperties
+data class User (
+    val uID: String,
+    val name: String)

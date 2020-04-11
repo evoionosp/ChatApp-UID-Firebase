@@ -159,6 +159,7 @@
 
     <dimen name="recording_voice_lock_target">-96dp</dimen>
 
+
     <dimen name="default_margin">16dp</dimen>
     <dimen name="drawable_padding">24dp</dimen>
     <dimen name="text_size">16sp</dimen>

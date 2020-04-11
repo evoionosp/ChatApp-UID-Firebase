@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.firestore.FirebaseFirestore
+import com.pixplicity.easyprefs.library.Prefs
 import ir.drax.netwatch.NetWatch
 import ir.drax.netwatch.cb.NetworkChangeReceiver_navigator
 
@@ -24,6 +25,14 @@ abstract class MyBaseActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setupNetWatcher(this)
+    }
+
+    fun isLoggedIn(): Boolean{
+        val uID = Prefs.getString("UID", "")
+
+        //TODO: Check on Firebase If ID exists
+
+        return uID.isNullOrBlank()
     }
 
 

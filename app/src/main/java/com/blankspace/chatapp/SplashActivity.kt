@@ -11,6 +11,8 @@ class SplashActivity : MyBaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
+
+
        if( Prefs.getString("UID", null) == null){
            startActivity(Intent(this, LoginActivity::class.java))
        } else {

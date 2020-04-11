@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:chatview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <co.intentservice.chatui.ChatView
+        android:id="@+id/chatView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/default_margin"
+        chatview:backgroundColor="@color/grey_100"
+        chatview:inputBackgroundColor="@color/grey_50"
+        chatview:inputUseEditorAction="true"
+        chatview:inputHint="Type message here"
+        chatview:sendBtnIconTint="@color/colorAccent"
+        chatview:sendBtnBackgroundTint="@color/colorPrimaryDark"
+        chatview:bubbleBackgroundRcv="@color/grey_300"
+        chatview:bubbleBackgroundSend="@color/cyan_200"
+        chatview:bubbleElevation="elevated"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,20 +10,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MaterialAppTheme">
-
+        <activity android:name=".ChatActivity"></activity>
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/MaterialNoActionBar"/>
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".SplashActivity"
+            android:theme="@style/MaterialNoActionBar" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".SplashActivity"
             android:theme="@style/MaterialFullScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterUserActivity"
-            android:theme="@style/MaterialNoActionBar"/>
+        <activity
+            android:name=".RegisterUserActivity"
+            android:theme="@style/MaterialNoActionBar" />
     </application>
 
 </manifest>
